@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card {
+  width: 350px;
+  height: auto;
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.header {
+  margin: 20px 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.btn-pagination {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination-center {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.btn-prev {
+  border-radius: 4px 0 0 4px;
+}
+
+.btn-next {
+  border-radius: 0 4px 4px 0;
+}
+
+.spinner-container {
+  width: auto;
+  height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
